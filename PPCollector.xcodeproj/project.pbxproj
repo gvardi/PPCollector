@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0EF7B1C6147ECFD100D20625 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF7B1C5147ECFD100D20625 /* Foundation.framework */; };
+		0EF7B1ED147ED08C00D20625 /* PPRemoteCollector.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EF7B1EB147ED08C00D20625 /* PPRemoteCollector.h */; };
+		0EF7B1F1147ED14B00D20625 /* PPCollector.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EF7B1EF147ED14B00D20625 /* PPCollector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0EF7B219147EDF5300D20625 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF7B1C5147ECFD100D20625 /* Foundation.framework */; };
+		0EF7B220147EDF5300D20625 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0EF7B21E147EDF5300D20625 /* InfoPlist.strings */; };
+		0EF7B223147EDF5300D20625 /* PPCollectorTest.h in Resources */ = {isa = PBXBuildFile; fileRef = 0EF7B222147EDF5300D20625 /* PPCollectorTest.h */; };
+		0EF7B225147EDF5300D20625 /* PPCollectorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF7B224147EDF5300D20625 /* PPCollectorTest.m */; };
+		0EF7B229147EE1DF00D20625 /* PPCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF7B1F0147ED14B00D20625 /* PPCollector.m */; };
+		0EF7B37414807D7D00D20625 /* MPCJSONDataSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EF7B36714807D7D00D20625 /* MPCJSONDataSerializer.h */; };
+		0EF7B37514807D7D00D20625 /* MPCJSONDataSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF7B36814807D7D00D20625 /* MPCJSONDataSerializer.m */; };
+		0EF7B37614807D7D00D20625 /* MPCJSONSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EF7B36914807D7D00D20625 /* MPCJSONSerializer.h */; };
+		0EF7B37714807D7D00D20625 /* MPCJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF7B36A14807D7D00D20625 /* MPCJSONSerializer.m */; };
+		0EF7B37814807D7D00D20625 /* MPCSerializedJSONData.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EF7B36B14807D7D00D20625 /* MPCSerializedJSONData.h */; };
+		0EF7B37914807D7D00D20625 /* MPCSerializedJSONData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF7B36C14807D7D00D20625 /* MPCSerializedJSONData.m */; };
+		0EF7B37A14807D7D00D20625 /* NSData+MPBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EF7B36E14807D7D00D20625 /* NSData+MPBase64.h */; };
+		0EF7B37B14807D7D00D20625 /* NSData+MPBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF7B36F14807D7D00D20625 /* NSData+MPBase64.m */; };
+		0EF7B37C14807D7D00D20625 /* MixpanelAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EF7B37014807D7D00D20625 /* MixpanelAPI.h */; };
+		0EF7B37D14807D7D00D20625 /* MixpanelAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF7B37114807D7D00D20625 /* MixpanelAPI.m */; };
+		0EF7B37E14807D7D00D20625 /* MixpanelEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EF7B37214807D7D00D20625 /* MixpanelEvent.h */; };
+		0EF7B37F14807D7D00D20625 /* MixpanelEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF7B37314807D7D00D20625 /* MixpanelEvent.m */; };
+		0EF7B3801480813000D20625 /* PPRemoteCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF7B1EC147ED08C00D20625 /* PPRemoteCollector.m */; };
+		0EF7B3811480819300D20625 /* PPCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF7B1F0147ED14B00D20625 /* PPCollector.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0EF7B1C2147ECFD100D20625 /* libPPCollector.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPPCollector.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EF7B1C5147ECFD100D20625 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0EF7B1C9147ECFD100D20625 /* PPCollector-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PPCollector-Prefix.pch"; sourceTree = "<group>"; };
+		0EF7B1EB147ED08C00D20625 /* PPRemoteCollector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PPRemoteCollector.h; path = ../PPRemoteCollector.h; sourceTree = "<group>"; };
+		0EF7B1EC147ED08C00D20625 /* PPRemoteCollector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PPRemoteCollector.m; path = ../PPRemoteCollector.m; sourceTree = "<group>"; };
+		0EF7B1EF147ED14B00D20625 /* PPCollector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPCollector.h; sourceTree = SOURCE_ROOT; };
+		0EF7B1F0147ED14B00D20625 /* PPCollector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPCollector.m; sourceTree = SOURCE_ROOT; };
+		0EF7B217147EDF5300D20625 /* PPCollectorTest.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PPCollectorTest.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EF7B21D147EDF5300D20625 /* PPCollectorTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PPCollectorTest-Info.plist"; sourceTree = "<group>"; };
+		0EF7B21F147EDF5300D20625 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0EF7B221147EDF5300D20625 /* PPCollectorTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PPCollectorTest-Prefix.pch"; sourceTree = "<group>"; };
+		0EF7B222147EDF5300D20625 /* PPCollectorTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPCollectorTest.h; sourceTree = "<group>"; };
+		0EF7B224147EDF5300D20625 /* PPCollectorTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPCollectorTest.m; sourceTree = "<group>"; };
+		0EF7B36714807D7D00D20625 /* MPCJSONDataSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPCJSONDataSerializer.h; sourceTree = "<group>"; };
+		0EF7B36814807D7D00D20625 /* MPCJSONDataSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPCJSONDataSerializer.m; sourceTree = "<group>"; };
+		0EF7B36914807D7D00D20625 /* MPCJSONSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPCJSONSerializer.h; sourceTree = "<group>"; };
+		0EF7B36A14807D7D00D20625 /* MPCJSONSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPCJSONSerializer.m; sourceTree = "<group>"; };
+		0EF7B36B14807D7D00D20625 /* MPCSerializedJSONData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPCSerializedJSONData.h; sourceTree = "<group>"; };
+		0EF7B36C14807D7D00D20625 /* MPCSerializedJSONData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPCSerializedJSONData.m; sourceTree = "<group>"; };
+		0EF7B36E14807D7D00D20625 /* NSData+MPBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MPBase64.h"; sourceTree = "<group>"; };
+		0EF7B36F14807D7D00D20625 /* NSData+MPBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MPBase64.m"; sourceTree = "<group>"; };
+		0EF7B37014807D7D00D20625 /* MixpanelAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixpanelAPI.h; sourceTree = "<group>"; };
+		0EF7B37114807D7D00D20625 /* MixpanelAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixpanelAPI.m; sourceTree = "<group>"; };
+		0EF7B37214807D7D00D20625 /* MixpanelEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixpanelEvent.h; sourceTree = "<group>"; };
+		0EF7B37314807D7D00D20625 /* MixpanelEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixpanelEvent.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0EF7B1BF147ECFD100D20625 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EF7B1C6147ECFD100D20625 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EF7B213147EDF5300D20625 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EF7B219147EDF5300D20625 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0EF7B1B7147ECFD100D20625 = {
+			isa = PBXGroup;
+			children = (
+				0EF7B36414807D7D00D20625 /* MPLib */,
+				0EF7B1C7147ECFD100D20625 /* PPCollector */,
+				0EF7B21B147EDF5300D20625 /* PPCollectorTest */,
+				0EF7B1C4147ECFD100D20625 /* Frameworks */,
+				0EF7B1C3147ECFD100D20625 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0EF7B1C3147ECFD100D20625 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0EF7B1C2147ECFD100D20625 /* libPPCollector.a */,
+				0EF7B217147EDF5300D20625 /* PPCollectorTest.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0EF7B1C4147ECFD100D20625 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0EF7B1C5147ECFD100D20625 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0EF7B1C7147ECFD100D20625 /* PPCollector */ = {
+			isa = PBXGroup;
+			children = (
+				0EF7B1EF147ED14B00D20625 /* PPCollector.h */,
+				0EF7B1F0147ED14B00D20625 /* PPCollector.m */,
+				0EF7B1EB147ED08C00D20625 /* PPRemoteCollector.h */,
+				0EF7B1EC147ED08C00D20625 /* PPRemoteCollector.m */,
+				0EF7B1C8147ECFD100D20625 /* Supporting Files */,
+			);
+			path = PPCollector;
+			sourceTree = "<group>";
+		};
+		0EF7B1C8147ECFD100D20625 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0EF7B1C9147ECFD100D20625 /* PPCollector-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0EF7B21B147EDF5300D20625 /* PPCollectorTest */ = {
+			isa = PBXGroup;
+			children = (
+				0EF7B222147EDF5300D20625 /* PPCollectorTest.h */,
+				0EF7B224147EDF5300D20625 /* PPCollectorTest.m */,
+				0EF7B21C147EDF5300D20625 /* Supporting Files */,
+			);
+			path = PPCollectorTest;
+			sourceTree = "<group>";
+		};
+		0EF7B21C147EDF5300D20625 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0EF7B21D147EDF5300D20625 /* PPCollectorTest-Info.plist */,
+				0EF7B21E147EDF5300D20625 /* InfoPlist.strings */,
+				0EF7B221147EDF5300D20625 /* PPCollectorTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0EF7B36414807D7D00D20625 /* MPLib */ = {
+			isa = PBXGroup;
+			children = (
+				0EF7B36514807D7D00D20625 /* lib */,
+				0EF7B37014807D7D00D20625 /* MixpanelAPI.h */,
+				0EF7B37114807D7D00D20625 /* MixpanelAPI.m */,
+				0EF7B37214807D7D00D20625 /* MixpanelEvent.h */,
+				0EF7B37314807D7D00D20625 /* MixpanelEvent.m */,
+			);
+			path = MPLib;
+			sourceTree = "<group>";
+		};
+		0EF7B36514807D7D00D20625 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				0EF7B36614807D7D00D20625 /* JSON */,
+				0EF7B36D14807D7D00D20625 /* NSData_Base64 */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		0EF7B36614807D7D00D20625 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				0EF7B36714807D7D00D20625 /* MPCJSONDataSerializer.h */,
+				0EF7B36814807D7D00D20625 /* MPCJSONDataSerializer.m */,
+				0EF7B36914807D7D00D20625 /* MPCJSONSerializer.h */,
+				0EF7B36A14807D7D00D20625 /* MPCJSONSerializer.m */,
+				0EF7B36B14807D7D00D20625 /* MPCSerializedJSONData.h */,
+				0EF7B36C14807D7D00D20625 /* MPCSerializedJSONData.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		0EF7B36D14807D7D00D20625 /* NSData_Base64 */ = {
+			isa = PBXGroup;
+			children = (
+				0EF7B36E14807D7D00D20625 /* NSData+MPBase64.h */,
+				0EF7B36F14807D7D00D20625 /* NSData+MPBase64.m */,
+			);
+			path = NSData_Base64;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0EF7B1C0147ECFD100D20625 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EF7B1ED147ED08C00D20625 /* PPRemoteCollector.h in Headers */,
+				0EF7B1F1147ED14B00D20625 /* PPCollector.h in Headers */,
+				0EF7B37414807D7D00D20625 /* MPCJSONDataSerializer.h in Headers */,
+				0EF7B37614807D7D00D20625 /* MPCJSONSerializer.h in Headers */,
+				0EF7B37814807D7D00D20625 /* MPCSerializedJSONData.h in Headers */,
+				0EF7B37A14807D7D00D20625 /* NSData+MPBase64.h in Headers */,
+				0EF7B37C14807D7D00D20625 /* MixpanelAPI.h in Headers */,
+				0EF7B37E14807D7D00D20625 /* MixpanelEvent.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0EF7B1C1147ECFD100D20625 /* PPCollector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0EF7B1CC147ECFD100D20625 /* Build configuration list for PBXNativeTarget "PPCollector" */;
+			buildPhases = (
+				0EF7B1BE147ECFD100D20625 /* Sources */,
+				0EF7B1BF147ECFD100D20625 /* Frameworks */,
+				0EF7B1C0147ECFD100D20625 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PPCollector;
+			productName = PPCollector;
+			productReference = 0EF7B1C2147ECFD100D20625 /* libPPCollector.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		0EF7B216147EDF5300D20625 /* PPCollectorTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0EF7B226147EDF5300D20625 /* Build configuration list for PBXNativeTarget "PPCollectorTest" */;
+			buildPhases = (
+				0EF7B212147EDF5300D20625 /* Sources */,
+				0EF7B213147EDF5300D20625 /* Frameworks */,
+				0EF7B214147EDF5300D20625 /* Resources */,
+				0EF7B215147EDF5300D20625 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PPCollectorTest;
+			productName = PPCollectorTest;
+			productReference = 0EF7B217147EDF5300D20625 /* PPCollectorTest.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0EF7B1B9147ECFD100D20625 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 0EF7B1BC147ECFD100D20625 /* Build configuration list for PBXProject "PPCollector" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0EF7B1B7147ECFD100D20625;
+			productRefGroup = 0EF7B1C3147ECFD100D20625 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0EF7B1C1147ECFD100D20625 /* PPCollector */,
+				0EF7B216147EDF5300D20625 /* PPCollectorTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0EF7B214147EDF5300D20625 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EF7B220147EDF5300D20625 /* InfoPlist.strings in Resources */,
+				0EF7B223147EDF5300D20625 /* PPCollectorTest.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EF7B215147EDF5300D20625 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0EF7B1BE147ECFD100D20625 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EF7B3811480819300D20625 /* PPCollector.m in Sources */,
+				0EF7B3801480813000D20625 /* PPRemoteCollector.m in Sources */,
+				0EF7B37514807D7D00D20625 /* MPCJSONDataSerializer.m in Sources */,
+				0EF7B37714807D7D00D20625 /* MPCJSONSerializer.m in Sources */,
+				0EF7B37914807D7D00D20625 /* MPCSerializedJSONData.m in Sources */,
+				0EF7B37B14807D7D00D20625 /* NSData+MPBase64.m in Sources */,
+				0EF7B37D14807D7D00D20625 /* MixpanelAPI.m in Sources */,
+				0EF7B37F14807D7D00D20625 /* MixpanelEvent.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EF7B212147EDF5300D20625 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EF7B229147EE1DF00D20625 /* PPCollector.m in Sources */,
+				0EF7B225147EDF5300D20625 /* PPCollectorTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0EF7B21E147EDF5300D20625 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0EF7B21F147EDF5300D20625 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0EF7B1CA147ECFD100D20625 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0EF7B1CB147ECFD100D20625 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		0EF7B1CD147ECFD100D20625 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DSTROOT = /tmp/PPCollector.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PPCollector/PPCollector-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos5.0;
+				USER_HEADER_SEARCH_PATHS = "/Users/Meirav/Code/** $(BUILT_PRODUCTS_DIR)/**";
+			};
+			name = Debug;
+		};
+		0EF7B1CE147ECFD100D20625 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DSTROOT = /tmp/PPCollector.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PPCollector/PPCollector-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos5.0;
+				USER_HEADER_SEARCH_PATHS = "/Users/Meirav/Code/** $(BUILT_PRODUCTS_DIR)/**";
+			};
+			name = Release;
+		};
+		0EF7B227147EDF5300D20625 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PPCollectorTest/PPCollectorTest-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "PPCollectorTest/PPCollectorTest-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		0EF7B228147EDF5300D20625 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PPCollectorTest/PPCollectorTest-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "PPCollectorTest/PPCollectorTest-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0EF7B1BC147ECFD100D20625 /* Build configuration list for PBXProject "PPCollector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EF7B1CA147ECFD100D20625 /* Debug */,
+				0EF7B1CB147ECFD100D20625 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0EF7B1CC147ECFD100D20625 /* Build configuration list for PBXNativeTarget "PPCollector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EF7B1CD147ECFD100D20625 /* Debug */,
+				0EF7B1CE147ECFD100D20625 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0EF7B226147EDF5300D20625 /* Build configuration list for PBXNativeTarget "PPCollectorTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EF7B227147EDF5300D20625 /* Debug */,
+				0EF7B228147EDF5300D20625 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0EF7B1B9147ECFD100D20625 /* Project object */;
+}

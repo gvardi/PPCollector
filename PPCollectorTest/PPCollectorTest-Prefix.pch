@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'PPCollectorTest' target in the 'PPCollectorTest' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+#endif

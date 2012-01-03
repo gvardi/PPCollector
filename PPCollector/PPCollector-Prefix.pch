@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'PPCollector' target in the 'PPCollector' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
