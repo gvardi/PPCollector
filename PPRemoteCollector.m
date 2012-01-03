@@ -24,6 +24,11 @@
     return self;
 }
 
+- (void) setFlush:(NSInteger) interval
+{
+    self.remoteCollectorAPI.uploadInterval = interval;
+    
+}
 
 - (void) trackLevel:(NSInteger)level score:(NSInteger)score
 {

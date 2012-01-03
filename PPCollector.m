@@ -68,6 +68,12 @@ static PPCollector *sharedInstance = nil;
 
 }
 
+- (void) setFlush:(NSInteger) interval
+{
+    [self.remoteCollector setFlush:interval];
+    
+}
+
 
 - (void) trackTopup:(NSInteger)amount
 {
@@ -103,7 +109,7 @@ static PPCollector *sharedInstance = nil;
 
 @end
 
-int sharedCollectorWithKey(const char * key)
+int sharedCollector(const char * key)
 {
     NSString *token = [NSString stringWithUTF8String:key];
     [[PPCollector sharedCollectorWithKey:token] trackLevel:0 score:0];
@@ -112,7 +118,13 @@ int sharedCollectorWithKey(const char * key)
     
 }
 
-int trackLevelScore(int level, int score)
+int setFlushInterval(int interval)
+{
+    [[PPCollector sharedCollector] setFlush:interval];
+    return 0;
+}
+
+int trackLevel(int level, int score)
 {
     [[PPCollector sharedCollector] trackLevel:level score:score];
     return 0;
@@ -135,5 +147,11 @@ int trackKeyValue(const char  * key, int value)
 {
     NSString *keyName = [NSString stringWithUTF8String:key];
     [[PPCollector sharedCollector] trackKey:keyName value:value];
+    return 0;
+}
+
+int flush()
+{
+    [[PPCollector sharedCollector] flush];
     return 0;
 }

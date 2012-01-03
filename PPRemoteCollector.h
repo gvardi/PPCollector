@@ -18,6 +18,7 @@
 
 
 - (id) initWithKey:(NSString *)key;
+- (void) setFlush:(NSInteger)flush;
 - (void) trackLevel:(NSInteger)level score:(NSInteger)score;
 - (void) trackTopup:(NSInteger)amount;
 - (void) trackPurchaceOfItem:(NSString *)item quantity:(NSInteger)quantity amount:(NSInteger)amount;
