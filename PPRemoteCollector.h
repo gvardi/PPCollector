@@ -24,7 +24,7 @@
 - (void) trackLevel:(NSInteger)level score:(NSInteger)score;
 - (void) trackTopup:(NSInteger)amount;
 - (void) trackPurchaceOfItem:(NSString *)item quantity:(NSInteger)quantity amount:(NSInteger)amount;
-- (void) trackKey:(NSString *)key value:(NSInteger)value;
+- (void) trackKey:(NSString *)key value:(NSString *)value;
 - (void) flush;
 
 

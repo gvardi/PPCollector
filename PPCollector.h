@@ -24,7 +24,7 @@
 - (void) trackLevel:(NSInteger)level score:(NSInteger)score;
 - (void) trackTopup:(NSInteger)amount;
 - (void) trackPurchaceOfItem:(NSString *)item quantity:(NSInteger)quantity amount:(NSInteger)amount;
-- (void) trackKey:(NSString *)key value:(NSInteger)value;
+- (void) trackKey:(NSString *)key value:(NSString *)value;
 - (void) flush;
 
 @end
@@ -35,6 +35,6 @@ int ppTrackStartLevel(int level);
 int ppTrackLevel(int level, int score);
 int ppTrackTopup(int amount);
 int ppTrackPurchaceOfItem(const char * item, int quantity, int amount);
-int ppTrackKeyValue(const char  * key, int value);
+int ppTrackKeyValue(const char  * key, const char  * value);
 int pptFlush();
 

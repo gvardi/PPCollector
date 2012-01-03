@@ -88,14 +88,14 @@
     
 }
 
-- (void) trackKey:(NSString *)key value:(NSInteger)value
+- (void) trackKey:(NSString *)key value:(NSString *)value
 {
     
     MixpanelAPI *remoteCollector = [MixpanelAPI sharedAPI];
     
 	[remoteCollector track:@"Key Value"
                 properties:[NSDictionary dictionaryWithObjectsAndKeys:
-                            key, @"key",[NSNumber numberWithInt:value], @"value", nil]
+                            key, @"key",value, @"value", nil]
      ];
     
 }

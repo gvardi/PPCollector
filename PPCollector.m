@@ -92,7 +92,7 @@ static PPCollector *sharedInstance = nil;
 }
 
 
-- (void) trackKey:(NSString *)key value:(NSInteger)value
+- (void) trackKey:(NSString *)key value:(NSString *)value
 {
     [self.remoteCollector trackKey:key value:value]; 
 }
@@ -155,10 +155,11 @@ int ppTrackPurchaceOfItem(const char * item, int quantity, int amount)
     return 0;
 }
 
-int ppTrackKeyValue(const char  * key, int value)
+int ppTrackKeyValue(const char  * key, const char  * value)
 {
     NSString *keyName = [NSString stringWithUTF8String:key];
-    [[PPCollector sharedCollector] trackKey:keyName value:value];
+    NSString *valueName = [NSString stringWithUTF8String:value];
+    [[PPCollector sharedCollector] trackKey:keyName value:valueName];
     return 0;
 }
 
