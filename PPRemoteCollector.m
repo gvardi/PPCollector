@@ -20,7 +20,7 @@
     if (self) {
         remoteCollectorAPI = [MixpanelAPI sharedAPIWithToken:key];
     }
-    //fixme send event
+    [self trackSession];
     return self;
 }
 
@@ -29,6 +29,27 @@
     self.remoteCollectorAPI.uploadInterval = interval;
     
 }
+
+- (void) trackSession
+{
+    MixpanelAPI *remoteCollector = [MixpanelAPI sharedAPI];
+    
+	[remoteCollector track:@"Session Start"];
+}
+
+
+- (void) trackStartLevel:(NSInteger)level
+{
+    
+    MixpanelAPI *remoteCollector = [MixpanelAPI sharedAPI];
+    
+	[remoteCollector track:@"Level Start"
+                properties:[NSDictionary dictionaryWithObjectsAndKeys:
+                            [NSNumber numberWithInt:level], @"level",[NSNumber numberWithInt:0], @"score", nil]
+     ];
+    
+}
+
 
 - (void) trackLevel:(NSInteger)level score:(NSInteger)score
 {

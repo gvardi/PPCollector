@@ -20,6 +20,7 @@
 + (id) sharedCollectorWithKey:(NSString *)key;
 + (id) sharedCollector;
 - (void) setFlush:(NSInteger)flush;
+- (void) trackStartLevel:(NSInteger)level;
 - (void) trackLevel:(NSInteger)level score:(NSInteger)score;
 - (void) trackTopup:(NSInteger)amount;
 - (void) trackPurchaceOfItem:(NSString *)item quantity:(NSInteger)quantity amount:(NSInteger)amount;
@@ -28,11 +29,12 @@
 
 @end
 
-int sharedCollector(const char * key);
-int setFlushInterval(int interval);
-int trackLevel(int level, int score);
-int trackTopup(int amount);
-int trackPurchaceOfItem(const char * item, int quantity, int amount);
-int trackKeyValue(const char  * key, int value);
-int flush();
+int ppSharedCollector(const char * key);
+int ppSetFlushInterval(int interval);
+int ppTrackStartLevel(int level);
+int ppTrackLevel(int level, int score);
+int ppTrackTopup(int amount);
+int ppTrackPurchaceOfItem(const char * item, int quantity, int amount);
+int ppTrackKeyValue(const char  * key, int value);
+int pptFlush();
 

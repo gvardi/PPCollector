@@ -61,6 +61,11 @@ static PPCollector *sharedInstance = nil;
     return self;
 }
 
+- (void) trackStartLevel:(NSInteger)level
+{
+    [self.remoteCollector trackStartLevel:level];
+    
+}
 
 - (void) trackLevel:(NSInteger)level score:(NSInteger)score
 {
@@ -109,7 +114,7 @@ static PPCollector *sharedInstance = nil;
 
 @end
 
-int sharedCollector(const char * key)
+int ppSharedCollector(const char * key)
 {
     NSString *token = [NSString stringWithUTF8String:key];
     [[PPCollector sharedCollectorWithKey:token] trackLevel:0 score:0];
@@ -118,39 +123,46 @@ int sharedCollector(const char * key)
     
 }
 
-int setFlushInterval(int interval)
+int ppSetFlushInterval(int interval)
 {
     [[PPCollector sharedCollector] setFlush:interval];
     return 0;
 }
 
-int trackLevel(int level, int score)
+int ppTrackStartLevel(int level)
+{
+    [[PPCollector sharedCollector] trackStartLevel:level];
+    return 0;
+}
+
+
+int ppTrackLevel(int level, int score)
 {
     [[PPCollector sharedCollector] trackLevel:level score:score];
     return 0;
 }
 
-int trackTopup(int amount)
+int ppTrackTopup(int amount)
 {
     [[PPCollector sharedCollector] trackTopup:amount];
     return 0;
 }
 
-int trackPurchaceOfItem(const char * item, int quantity, int amount)
+int ppTrackPurchaceOfItem(const char * item, int quantity, int amount)
 {
     NSString *itemName = [NSString stringWithUTF8String:item];
     [[PPCollector sharedCollector] trackPurchaceOfItem:itemName quantity:quantity amount:amount];
     return 0;
 }
 
-int trackKeyValue(const char  * key, int value)
+int ppTrackKeyValue(const char  * key, int value)
 {
     NSString *keyName = [NSString stringWithUTF8String:key];
     [[PPCollector sharedCollector] trackKey:keyName value:value];
     return 0;
 }
 
-int flush()
+int ppFlush()
 {
     [[PPCollector sharedCollector] flush];
     return 0;
